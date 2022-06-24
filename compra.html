@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina de Compra</title>
+
+	<link rel="stylesheet" href="css/compra.css">
+	<script type="text/javascript" src="javascript/java.js"></script>
+	
+	<script type="text/javascript" src="jquery.mask.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#cpf").mask("000.000.000-00");
+			$("#rg").mask("999.999.999-W",{
+				translation:{
+					'W':{
+						pattern:/[X0-9]/
+					}
+				},
+				reverse:true
+			})
+
+			$("#cep").mask("00000-000")
+		})
+
+	</script>
+	<script src="scripts.js"></script>
+</head>
+<body>
+
+	<a id="comeco"></a>
+   
+    <header class="cabecalho">
+      <a href="index.html">  <div><img src="imagens/logo.png" id="logo-img"></div></a>
+    </header>
+
+	<section class="secao_principal">
+		<div >
+			<h1>Faça parte da Sweet Dreams </h1>
+		</div>
+	</section>
+	
+	<br class="fix">	
+	
+	<section class="formulario">
+
+		<form name="fContato" method="post" action="#">
+		 
+			<label>Nome</label><br>
+			<input type="text" maxlength="50" size="60" id="nome" autofocus required><br><br>
+
+            <label>Sobrenome</label><br>
+			<input type="text" maxlength="50" size="60" id="sobrenome" autofocus required><br><br>
+
+            <label>CPF</label><br>
+			<input type="number" maxlength="14" size="14fg" id="cpf" autofocus required placeholder="xxx.xxx.xxx-xx" ><br><br>
+
+            <label>Email</label><br>
+			<input type="email" maxlength="50" size="60" id="email" required><br><br>
+
+            <label>Crie uma senha para sua conta</label><br>
+			<input type="text" maxlength="15" size="11" id="senha" autofocus required><br><br>		
+<!-- COLOCAR BOTÃO DA PARCELA -->
+			<label>Nome do portador</label><br>
+			<input type="text" maxlength="50" size="60" id="nomeportador" autofocus required><br><br>
+
+            <label>Número do cartão</label><br>
+			<input type="number" maxlength="19" size="19" id="numerocartao" autofocus required placeholder="xxxx xxxx xxxx xxxx" ><br><br>
+
+            <label>Valiade</label><br>
+			<input type="number" maxlength="5" size="5" id="validade" autofocus required placeholder="MM/AA"><br><br>
+
+            <label>Código de segurança</label><br>
+			<input type="number" maxlength="3" size="3" id="codseguranca" autofocus required placeholder="xxx" ><br><br>
+
+            <label>Parcelas</label><br>
+			<input type="text" maxlength="15" size="15" id="parcelas" autofocus required><br><br>
+<!-- COLOCAR BOTÃO DA PARCELA -->			
+			<input type="submit" value="Realizar Pagamento" class="botao"><br><br>
+			<input type="reset" value="Limpar" class="botao">
+
+		</form>
+	</section>
+</br>
+</br> 
+</br> 
+</br>   
+<footer>
+		<div  class="footer-content">
+			<h3>É um prazer ter você como nosso aluno!</h3>
+			<p>
+				Parece que você está interessado nos nossos cursos.
+				Agradecemos por considerar nossa empresa! Se pudermos ajudar
+				você com alguma coisa, é só entrar em contato através de nossas redes. 
+			</p>
+			<ul class="contato">
+				<li><a href="https://www.facebook.com/profile.php?id=100082291681084"><i><img src="imagens/f.png"></i></a></li>
+				<li><a href="https://api.whatsapp.com/send?phone=5511942547951&text=Sweet%20Dreams%2C%20fa%C3%A7a%20parte%20voc%C3%AA%20tamb%C3%A9m!"><i><img src="imagens/w.png"></i></a></li>
+				<li><a href="https://www.instagram.com/sweet__dreams__oficial/"><i><img src="imagens/i.png"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCRrltF2u7hFoB-PrEm5WZnA"><i><img src="imagens/y.png"></i></a></li>
+				<li><a href="mailto:sweetdreamsitb@gmail.com"><i><img src="imagens/g.png"></i></a></li>
+			</ul>
+		</div>
+
+			<a class="termo" href="termo.html">Política de Privacidade</a>
+	
+</footer>
+	
+	<a id="link-topo" href="#">&#9650;</a>
+		
+</body>
+</html>

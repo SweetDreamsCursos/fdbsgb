@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/icons/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
+    <script type="text/javascript" src="javascript/java.js"></script>
+    
+</head>
+
+<body>
+
+    <a id="comeco"></a>
+   
+    <header class="cabecalho">
+        <div><a href="index.html"><img src="imagens/logo.png" id="logo-img"></a></div>
+    </header>
+
+    <div class="container">
+
+        <form action="/add-cadastro" method="POST">
+        <div class="tudo">
+            <h1> Cadastrar </h1>
+
+            <div id="msgErro"></div>
+            <div id="msgSucesso"></div>
+
+            <div class="label-float">
+                <input type="text" name="nome_aluno" placeholder="" required>
+                <label id="nomecad" for="nome">Nome</label>
+            </div>
+            <div class="label-float">
+                <input type="email" name="email_aluno" placeholder="" required>
+                <label id="emailcad" for="email">E-mail</label>
+            </div>
+            <div class="label-float">
+                <input type="tel" name="celular_aluno" placeholder="" required>
+                <label id="celcad" for="celular">Celular</label>
+            </div>
+            <div class="label-float">
+                <input type="password" name="senha_aluno" placeholder="" required>
+                <label id="senhacad" for="senha">Senha</label>
+                <i onclick='VerSenha1()' id="VerSenha1" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <div class="label-float">
+                <input type="password" name="confirmSenha" placeholder="" required>
+                <label id="confirmSenhacad" for="confirmSenha">Confirme a Senha</label>
+                <i onclick='VerSenha2()' id="VerSenha2" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <div class="label-float">
+<!--COMEÇO TERMO DE USO-->
+        </div>
+        <div>
+            <div>
+                <input type="checkbox" id="li_aceito" name="li_aceito" value="aceito" required>  <p id="sla"> DECLARO QUE LI E ACEITO OS <a class="T" href="termo.html">TERMOS DE USO</a></p>
+               
+            </div>
+        </div>
+<!-- FIM TERMO DE USO-->
+</br>
+</br>
+            
+    <a href="home_logado.html"><div class="vamo">Cadastrar</div></a>
+
+            </div>
+        </div>
+    </form>
+
+    </div>
+</br>
+</br>
+</br>
+</br>
+    <footer>
+        <div  class="footer-content">
+            <h3>É um prazer ter você como nosso aluno!</h3>
+            <p>
+                Parece que você está interessado nos nossos cursos.
+                Agradecemos por considerar nossa empresa! Se pudermos ajudar
+                você com alguma coisa, é só entrar em contato através de nossas redes. 
+            </p>
+            <ul class="contato">
+                <li><a href="https://www.facebook.com/profile.php?id=100082291681084"><i><img src="imagens/f.png"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511942547951&text=Sweet%20Dreams%2C%20fa%C3%A7a%20parte%20voc%C3%AA%20tamb%C3%A9m!"><i><img src="imagens/w.png"></i></a></li>
+                <li><a href="https://www.instagram.com/sweet__dreams__oficial/"><i><img src="imagens/i.png"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCRrltF2u7hFoB-PrEm5WZnA"><i><img src="imagens/y.png"></i></a></li>
+                <li><a href="mailto:sweetdreamsitb@gmail.com"><i><img src="imagens/g.png"></i></a></li>
+            </ul>
+        </div>
+    
+    </footer>
+    
+    <a id="link-topo" href="#">&#9650;</a>
+    
+</body>
+</html>
